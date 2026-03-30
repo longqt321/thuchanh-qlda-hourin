@@ -29,7 +29,7 @@ public:
         // chi gan _data cua FloatVector nay vao _data cua FloatVector
         // kia thi phai copy tung phan tu cua FloatVector kia, de tranh
         // bug double free.
-        FloatVector operator=(const FloatVector&); // Gan vector nay
+        FloatVector &operator=(const FloatVector); // Gan vector nay
                                                    // vao vector kia.
 
         // Thanh vien 3
