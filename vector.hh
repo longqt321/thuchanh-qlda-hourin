@@ -20,6 +20,11 @@ public:
         void push(float n); // Them phan tu n vao cuoi vector.
         float pop();    // Xoa phan tu cuoi cung (phan tu duoc push
                         // gan day nhat) roi tra ve gia tri phan tu do.
+        void FloatVector(){
+                _data = nullptr;
+                _size = 0;
+                _capacity = 0;
+        }
 
         // Thanh vien 2
         float &operator[](size_t idx);
@@ -66,4 +71,5 @@ private:
         float *_data;
         size_t _size, _capacity;
 };
+
 
